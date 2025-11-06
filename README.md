@@ -18,7 +18,7 @@
 
 ## Brand Identity
 - **Name**: Djedi Breeez
-- **Tagline**: "TEACH YOUR HUSTLE"
+- **Tagline**: "Building (6) + Expressing (3) + Ascending (7)"
 - **Logo**: Infinity symbol (∞) with neon purple/pink/blue gradient
 - **Inspired By**: Infinite Motion's neon aesthetic
 
