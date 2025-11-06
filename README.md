@@ -18,7 +18,7 @@
 
 ## Brand Identity
 - **Name**: Djedi Breeez
-- **Tagline**: "Building Expressing Ascending"
+- **Tagline**: "Building - Expressing - Ascending"
 - **Logo**: Infinity symbol (∞) with neon purple/pink/blue gradient
 - **Inspired By**: Infinite Motion's neon aesthetic
 
