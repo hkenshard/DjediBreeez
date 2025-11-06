@@ -1,11 +1,26 @@
-# Infinite Hub - Professional Consultant & Life Coach Website
+# Djedi Breeez - Teach Your Hustle
 
 ## Project Overview
-**Infinite Hub** is a comprehensive consultant and life coach hub website that connects multiple business ventures and services. This site serves as the central platform for providing consultations, subscription services, digital products, and linking to the Infinite Motion and Infinite Capital Group companies.
+**Djedi Breeez** is a cutting-edge consultant and life coach hub website featuring a stunning neon aesthetic inspired by Infinite Motion's brand identity. This site serves as the central platform for providing consultations, crypto gems subscriptions, digital products, and linking to the Infinite Motion and Infinite Capital Group companies.
+
+### Design Aesthetic
+- **Dark Theme**: Pure black background (#000000) with deep space vibes
+- **Neon Colors**: Purple (#9000ff), Pink (#ff00ff), Cyan/Blue (#00ffff)
+- **Particle Effects**: Animated star field background for cosmic feel
+- **Neon Glow**: All interactive elements feature neon glow effects
+- **Glass Morphism**: Translucent cards with backdrop blur
+- **Typography**: Exo 2 font family for modern, futuristic look
+- **Infinity Symbol**: Featured prominently as brand identity (∞)
 
 ## Live URLs
 - **Development**: https://3000-i6gwbd8eze46kz213f3tp-5c13a017.sandbox.novita.ai
 - **Production**: (To be deployed to Cloudflare Pages)
+
+## Brand Identity
+- **Name**: Djedi Breeez
+- **Tagline**: "TEACH YOUR HUSTLE"
+- **Logo**: Infinity symbol (∞) with neon purple/pink/blue gradient
+- **Inspired By**: Infinite Motion's neon aesthetic
 
 ## Current Features
 
