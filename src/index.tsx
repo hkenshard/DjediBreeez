@@ -37,7 +37,7 @@ app.get('/', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Djedi Breeez | Teach Your Hustle</title>
+        <title>Djedi Breeez | Building (6) + Expressing (3) + Ascending (7)</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -274,7 +274,7 @@ app.get('/', (c) => {
                             <span class="text-4xl infinity-gradient">∞</span>
                             <div>
                                 <h1 class="text-2xl font-bold neon-text">DJEDI BREEEZ</h1>
-                                <p class="text-xs text-gray-400 uppercase tracking-widest">Teach Your Hustle</p>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest">Building (6) + Expressing (3) + Ascending (7)</p>
                             </div>
                         </div>
                         <div class="hidden md:flex space-x-8">
@@ -311,7 +311,7 @@ app.get('/', (c) => {
                         DJEDI BREEEZ
                     </h1>
                     <p class="text-2xl md:text-4xl font-bold mb-8 infinity-gradient uppercase tracking-wider">
-                        Teach Your Hustle
+                        Building (6) + Expressing (3) + Ascending (7)
                     </p>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
                         Life Coach | Business Consultant | Crypto Expert | Financial Strategist
@@ -725,7 +725,7 @@ app.get('/', (c) => {
                                 <span class="text-4xl infinity-gradient">∞</span>
                                 <div>
                                     <h3 class="text-xl font-bold neon-text">DJEDI BREEEZ</h3>
-                                    <p class="text-xs text-gray-500 uppercase">Teach Your Hustle</p>
+                                    <p class="text-xs text-gray-500 uppercase">Building (6) + Expressing (3) + Ascending (7)</p>
                                 </div>
                             </div>
                             <p class="text-gray-500">Your central hub for infinite success.</p>
