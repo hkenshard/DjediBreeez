@@ -19,7 +19,9 @@
 ## Brand Identity
 - **Name**: Djedi Breeez
 - **Tagline**: "Building - Expressing - Ascending"
+- **Character**: Purple skull with beanie, infinity symbol, guardian dragon
 - **Logo**: Infinity symbol (∞) with neon purple/pink/blue gradient
+- **Aesthetic**: Dark fantasy, mystical, powerful - representing infinite potential
 - **Inspired By**: Infinite Motion's neon aesthetic
 
 ## Current Features
