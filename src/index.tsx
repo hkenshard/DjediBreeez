@@ -266,32 +266,64 @@ app.get('/', (c) => {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                width: 80%;
-                max-width: 800px;
+                width: 70%;
+                max-width: 700px;
                 height: auto;
-                opacity: 0.15;
+                opacity: 0.18;
                 z-index: 0;
                 pointer-events: none;
-                filter: drop-shadow(0 0 50px rgba(144, 0, 255, 0.5))
-                        drop-shadow(0 0 80px rgba(255, 0, 255, 0.3));
+                filter: drop-shadow(0 0 50px rgba(144, 0, 255, 0.6))
+                        drop-shadow(0 0 80px rgba(255, 0, 255, 0.4));
                 animation: character-float 8s ease-in-out infinite;
+                will-change: transform, opacity;
             }
 
             @keyframes character-float {
                 0%, 100% {
                     transform: translate(-50%, -50%) scale(1);
-                    opacity: 0.15;
+                    opacity: 0.18;
                 }
                 50% {
-                    transform: translate(-50%, -52%) scale(1.02);
-                    opacity: 0.2;
+                    transform: translate(-50%, -52%) scale(1.03);
+                    opacity: 0.25;
                 }
             }
 
+            /* Tablet */
+            @media (max-width: 1024px) {
+                .character-background {
+                    width: 80%;
+                    max-width: 600px;
+                    opacity: 0.15;
+                }
+            }
+
+            /* Mobile Portrait */
             @media (max-width: 768px) {
                 .character-background {
+                    width: 90%;
+                    max-width: 450px;
+                    opacity: 0.12;
+                    top: 45%;
+                }
+                
+                @keyframes character-float {
+                    0%, 100% {
+                        transform: translate(-50%, -50%) scale(1);
+                        opacity: 0.12;
+                    }
+                    50% {
+                        transform: translate(-50%, -51%) scale(1.02);
+                        opacity: 0.18;
+                    }
+                }
+            }
+
+            /* Small Mobile */
+            @media (max-width: 480px) {
+                .character-background {
                     width: 100%;
-                    max-width: 500px;
+                    max-width: 350px;
                     opacity: 0.1;
                 }
             }
