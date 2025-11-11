@@ -260,50 +260,39 @@ app.get('/', (c) => {
                 text-shadow: 0 0 10px var(--neon-blue);
             }
 
-            /* Character Image Styles */
-            .character-image {
-                max-width: 400px;
-                width: 100%;
+            /* Character Background */
+            .character-background {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                max-width: 800px;
                 height: auto;
-                filter: drop-shadow(0 0 30px rgba(144, 0, 255, 0.8))
-                        drop-shadow(0 0 50px rgba(255, 0, 255, 0.6));
-                animation: character-glow 3s ease-in-out infinite;
+                opacity: 0.15;
+                z-index: 0;
+                pointer-events: none;
+                filter: drop-shadow(0 0 50px rgba(144, 0, 255, 0.5))
+                        drop-shadow(0 0 80px rgba(255, 0, 255, 0.3));
+                animation: character-float 8s ease-in-out infinite;
             }
 
-            @keyframes character-glow {
+            @keyframes character-float {
                 0%, 100% {
-                    filter: drop-shadow(0 0 30px rgba(144, 0, 255, 0.8))
-                            drop-shadow(0 0 50px rgba(255, 0, 255, 0.6));
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 0.15;
                 }
                 50% {
-                    filter: drop-shadow(0 0 40px rgba(144, 0, 255, 1))
-                            drop-shadow(0 0 60px rgba(255, 0, 255, 0.8));
+                    transform: translate(-50%, -52%) scale(1.02);
+                    opacity: 0.2;
                 }
             }
 
-            .character-container {
-                position: relative;
-                display: inline-block;
-            }
-
-            .character-container::before {
-                content: '';
-                position: absolute;
-                inset: -20px;
-                background: radial-gradient(circle, rgba(144, 0, 255, 0.3) 0%, transparent 70%);
-                border-radius: 50%;
-                animation: pulse-ring 2s ease-in-out infinite;
-                z-index: -1;
-            }
-
-            @keyframes pulse-ring {
-                0%, 100% {
-                    transform: scale(1);
-                    opacity: 0.5;
-                }
-                50% {
-                    transform: scale(1.1);
-                    opacity: 0.8;
+            @media (max-width: 768px) {
+                .character-background {
+                    width: 100%;
+                    max-width: 500px;
+                    opacity: 0.1;
                 }
             }
         </style>
@@ -348,14 +337,16 @@ app.get('/', (c) => {
                 </div>
             </nav>
 
+            <!-- Character Background -->
+            <img src="https://page.gensparksite.com/v1/base64_upload/8a6cf56e498214b93f0e6052aa89d0e9" 
+                 alt="Djedi Breeez Character Background" 
+                 class="character-background">
+
             <!-- Hero Section -->
             <section class="min-h-screen flex items-center justify-center pt-20 px-4">
                 <div class="text-center max-w-6xl mx-auto">
-                    <!-- Character Image -->
-                    <div class="mb-8 character-container flex justify-center">
-                        <img src="https://page.gensparksite.com/v1/base64_upload/8a6cf56e498214b93f0e6052aa89d0e9" 
-                             alt="Djedi Breeez Character" 
-                             class="character-image">
+                    <div class="mb-8">
+                        <span class="infinity-symbol">∞</span>
                     </div>
                     
                     <h1 class="text-6xl md:text-8xl font-black mb-6 neon-text">
@@ -456,6 +447,10 @@ app.get('/', (c) => {
                                 </li>
                                 <li class="flex items-center">
                                     <i class="fas fa-check text-cyan-400 mr-3"></i>
+                                    30-45 day results max
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-cyan-400 mr-3"></i>
                                     Expert guidance
                                 </li>
                                 <li class="flex items-center">
@@ -463,7 +458,11 @@ app.get('/', (c) => {
                                     Proven results
                                 </li>
                             </ul>
-                            <a href="#contact" class="block mt-auto">
+                            <div class="text-center mb-6">
+                                <p class="price-tag">$1,500</p>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">One-Time Investment</p>
+                            </div>
+                            <a href="#contact" class="block">
                                 <button class="neon-button w-full">
                                     Get Started
                                 </button>
