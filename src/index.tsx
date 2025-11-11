@@ -259,6 +259,53 @@ app.get('/', (c) => {
                 color: var(--neon-blue);
                 text-shadow: 0 0 10px var(--neon-blue);
             }
+
+            /* Character Image Styles */
+            .character-image {
+                max-width: 400px;
+                width: 100%;
+                height: auto;
+                filter: drop-shadow(0 0 30px rgba(144, 0, 255, 0.8))
+                        drop-shadow(0 0 50px rgba(255, 0, 255, 0.6));
+                animation: character-glow 3s ease-in-out infinite;
+            }
+
+            @keyframes character-glow {
+                0%, 100% {
+                    filter: drop-shadow(0 0 30px rgba(144, 0, 255, 0.8))
+                            drop-shadow(0 0 50px rgba(255, 0, 255, 0.6));
+                }
+                50% {
+                    filter: drop-shadow(0 0 40px rgba(144, 0, 255, 1))
+                            drop-shadow(0 0 60px rgba(255, 0, 255, 0.8));
+                }
+            }
+
+            .character-container {
+                position: relative;
+                display: inline-block;
+            }
+
+            .character-container::before {
+                content: '';
+                position: absolute;
+                inset: -20px;
+                background: radial-gradient(circle, rgba(144, 0, 255, 0.3) 0%, transparent 70%);
+                border-radius: 50%;
+                animation: pulse-ring 2s ease-in-out infinite;
+                z-index: -1;
+            }
+
+            @keyframes pulse-ring {
+                0%, 100% {
+                    transform: scale(1);
+                    opacity: 0.5;
+                }
+                50% {
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+            }
         </style>
     </head>
     <body>
@@ -303,10 +350,14 @@ app.get('/', (c) => {
 
             <!-- Hero Section -->
             <section class="min-h-screen flex items-center justify-center pt-20 px-4">
-                <div class="text-center max-w-5xl mx-auto">
-                    <div class="mb-8">
-                        <span class="infinity-symbol">∞</span>
+                <div class="text-center max-w-6xl mx-auto">
+                    <!-- Character Image -->
+                    <div class="mb-8 character-container flex justify-center">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/8a6cf56e498214b93f0e6052aa89d0e9" 
+                             alt="Djedi Breeez Character" 
+                             class="character-image">
                     </div>
+                    
                     <h1 class="text-6xl md:text-8xl font-black mb-6 neon-text">
                         DJEDI BREEEZ
                     </h1>
